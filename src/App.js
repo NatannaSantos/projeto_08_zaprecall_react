@@ -1,36 +1,18 @@
-export default function App() {
+import {useState} from "react"
+import TelaInicial from "./components/TelaInicial/index";
+import FlashCards from "./components/FlashCards/index";
+
+export default function App() { 
+   
+
 
     return (
         <>
-            <div className="telaInicial">
-                <div className="logo">
-                    <img src="img/logo.png" />
-                </div>
-                <button>
-                    praticar react
-                    <img src="img/next.png" />
-                </button>
-            </div>
-            <div className="flashCards">
-                <header>
-                    <img src="img/logo-mini.png" />
-                </header>
-                <div className="container">
-                    <div className="flashcardFrente">
-                        <p> O que é JSX? </p>
-                        <div className="numeroCarta">
-                            <p>1/8</p>
-                        </div>
-                        <div className="botaoRetorno">
-                            <img src="img/turn.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <TelaInicial />           
+           <FlashCards />
+           
             <div className="flashCardVirado">
-                <header>
-                    <img src="img/logo-mini.png" />
-                </header>
+               
                 <div className="container">
                     <div className="flashcardVerso">
                         <div className="tituloCard">

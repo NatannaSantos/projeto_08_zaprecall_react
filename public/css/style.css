@@ -4,6 +4,9 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.escondido{
+    display:none;
+}
 .telaInicial{
     width: 100vw;
     display: flex;
@@ -30,6 +33,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor:pointer;
 }
 
 
