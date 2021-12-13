@@ -50,7 +50,7 @@ export default function FlashCards() {
         {
             titulo: "O que é JSX?",
             resposta: "Uma extensão de linguagem do JavaScript",
-            index: "1/8"
+            index: "1/8" 
         },
         {
             titulo: "O React é __?",
@@ -177,7 +177,7 @@ export default function FlashCards() {
         setNumeroZap(numeroZap+1);
     }
     return (
-        <div className="flashCards">
+        <div className="flashCards" data-identifier="flashcard">
             <Header />
             <div className="container">
                 <div class={faceAtual === "flashCardFrente" ? ' ' : "escondido"}>

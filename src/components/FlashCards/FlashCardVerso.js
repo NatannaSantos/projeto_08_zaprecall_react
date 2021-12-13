@@ -2,7 +2,7 @@
 export default function FlashCardVerso({titulo,resposta,index,setFaceAtual,incrementarJogadas,cliqueZap}) {
     
     return (
-        <div className="flashcardVerso">
+        <div className="flashcardVerso" data-identifier="flashcard">
             <div className="tituloCard">
                 <p> {titulo} </p>
             </div>

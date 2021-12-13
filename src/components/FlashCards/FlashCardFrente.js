@@ -10,12 +10,12 @@ export default function FlashCardFrente({titulo, index,setFaceAtual,faceAtual,nu
       return (<TelaFinalFracasso />)
   }
     return (
-        <div className="flashcardFrente">
+        <div className="flashcardFrente" data-identifier="flashcard">
             <p>{titulo}</p>
             <div className="numeroCarta">
                 <p>{index}</p>
             </div>
-            <div className="botaoRetorno" onClick={()=>setFaceAtual('flashCardVerso')}>
+            <div className="botaoRetorno" onClick={()=>setFaceAtual('flashCardVerso')} data-identifier="arrow">
                 <img src={turn}/>
             </div>
         </div>
