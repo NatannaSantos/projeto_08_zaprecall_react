@@ -1,26 +1,21 @@
-import {useState} from "react"
+import { useState } from "react"
 import TelaInicial from "./components/TelaInicial/index";
 import FlashCards from "./components/FlashCards/index";
-import TelaFinal from "./components/TelaFinal/index";
-
-export default function App() { 
-   
 
 
+
+export default function App() {
+    const [paginaAtual, setPaginaAtual] = useState("telaInicial");
+  
     return (
         <>
-           <TelaInicial />           
-           <FlashCards />
-           <TelaFinal />
+            <div className={paginaAtual === "telaInicial"? ' ' : "escondido"}>
+                <TelaInicial setPaginaAtual={setPaginaAtual} />
+            </div>
+            <div className={paginaAtual === "flashCards"? ' ' : "escondido"}>
+                <FlashCards />
+            </div>           
            
-            {/* <div className="flashCardVirado">
-               
-                <div className="container">
-                    <div className="flashcardVerso">
-                        
-                </div>
-            </div> */}
-            
         </>
     );
 }

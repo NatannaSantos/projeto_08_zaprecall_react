@@ -1,8 +1,8 @@
 import next from "../../img/next.png";
 
-export default function Botao({texto,paginaAtual, setPaginaAtual}) {
+export default function Botao({texto, setPaginaAtual}) {
     return (
-        <button>
+        <button onClick={() => setPaginaAtual('flashCards')}>
             {texto}
             <img src={next} />
         </button>
